@@ -1,13 +1,3 @@
-#!/bin/bash
-#SBATCH --partition=alrodri-a100
-#SBATCH --time=00-09:00:00
-#SBATCH --gpus=1
-#SBATCH --cpus-per-gpu=4
-#SBATCH --mem-per-gpu=47GB
-#SBATCH --account=alrodri
-#SBATCH --output=/home/muwenhao/workplace/DiffOpt/synthetic/log/%j.out
-#SBATCH --error=/home/muwenhao/workplace/DiffOpt/synthetic/log/%j.err
-
 nvidia-smi
 CONFIG="$1"
 TASK="$2"
